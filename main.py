@@ -60,7 +60,7 @@ if not st.session_state.completed:
             st.session_state.q_index += 1
         else:
             st.session_state.completed = True
-        st.experimental_rerun()
+        st.rerun()
 
 else:
     st.balloons()
@@ -84,4 +84,4 @@ else:
         st.session_state.q_index = 0
         st.session_state.completed = False
         st.session_state.history = []
-        st.experimental_rerun()
+        st.rerun()
